@@ -1,0 +1,92 @@
+<?php
+return [
+    'BE' => [
+        'debug' => false,
+        'explicitADmode' => 'explicitAllow',
+        'installToolPassword' => '$P$CORrRCTUbOC4LGK0VhYAwPzI6gZVq70',
+        'loginSecurityLevel' => 'rsa',
+    ],
+    'DB' => [
+        'database' => 'test',
+        'host' => '127.0.0.1',
+        'password' => '',
+        'port' => 3306,
+        'username' => 'root',
+    ],
+    'EXT' => [
+        'extConf' => [
+            'bootstrap_package' => 'a:9:{s:21:"disableLessProcessing";s:1:"0";s:36:"disablePageTsNewContentElementWizard";s:1:"0";s:30:"disablePageTsTtContentPreviews";s:1:"0";s:16:"disablePageTsRTE";s:1:"0";s:20:"disablePageTsTCEFORM";s:1:"0";s:20:"disablePageTsTCEMAIN";s:1:"0";s:21:"disablePageTsAdmPanel";s:1:"0";s:27:"disablePageTsBackendLayouts";s:1:"0";s:4:"Logo";s:84:"../typo3conf/ext/bootstrap_package/Resources/Public/Images/Backend/TopBarLogo@2x.png";}',
+            'formhandler' => 'a:0:{}',
+            'lib_jquery' => 'a:0:{}',
+            'rsaauth' => 'a:1:{s:18:"temporaryDirectory";s:0:"";}',
+            'saltedpasswords' => 'a:2:{s:3:"BE.";a:4:{s:21:"saltedPWHashingMethod";s:41:"TYPO3\\CMS\\Saltedpasswords\\Salt\\PhpassSalt";s:11:"forceSalted";i:0;s:15:"onlyAuthService";i:0;s:12:"updatePasswd";i:1;}s:3:"FE.";a:5:{s:7:"enabled";i:1;s:21:"saltedPWHashingMethod";s:41:"TYPO3\\CMS\\Saltedpasswords\\Salt\\PhpassSalt";s:11:"forceSalted";i:0;s:15:"onlyAuthService";i:0;s:12:"updatePasswd";i:1;}}',
+        ],
+    ],
+    'FE' => [
+        'cHashIncludePageId' => true,
+        'debug' => false,
+        'loginSecurityLevel' => 'rsa',
+    ],
+    'GFX' => [
+        'colorspace' => 'RGB',
+        'im' => 1,
+        'im_mask_temp_ext_gif' => 1,
+        'im_path' => 'C:/Program Files/GraphicsMagick-1.3.26-Q16/',
+        'im_path_lzw' => 'C:/Program Files/GraphicsMagick-1.3.26-Q16/',
+        'im_v5effects' => -1,
+        'im_version_5' => 'gm',
+        'image_processing' => 1,
+        'jpg_quality' => '80',
+    ],
+    'INSTALL' => [
+        'wizardDone' => [
+            'TYPO3\CMS\Install\Updates\AccessRightParametersUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\BackendUserStartModuleUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\Compatibility6ExtractionUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\ContentTypesToTextMediaUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\FileListInAccessModuleListUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\FileListIsStartModuleUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\FilesReplacePermissionUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\LanguageIsoCodeUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\MediaceExtractionUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\MigrateMediaToAssetsForTextMediaCe' => 1,
+            'TYPO3\CMS\Install\Updates\MigrateShortcutUrlsAgainUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\OpenidExtractionUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\PageShortcutParentUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\ProcessedFileChecksumUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\TableFlexFormToTtContentFieldsUpdate' => 1,
+            'TYPO3\CMS\Install\Updates\WorkspacesNotificationSettingsUpdate' => 1,
+            'TYPO3\CMS\Rtehtmlarea\Hook\Install\DeprecatedRteProperties' => 1,
+            'TYPO3\CMS\Rtehtmlarea\Hook\Install\RteAcronymButtonRenamedToAbbreviation' => 1,
+        ],
+    ],
+    'SYS' => [
+        'caching' => [
+            'cacheConfigurations' => [
+                'extbase_object' => [
+                    'backend' => 'TYPO3\\CMS\\Core\\Cache\\Backend\\Typo3DatabaseBackend',
+                    'frontend' => 'TYPO3\\CMS\\Core\\Cache\\Frontend\\VariableFrontend',
+                    'groups' => [
+                        'system',
+                    ],
+                    'options' => [
+                        'defaultLifetime' => 0,
+                    ],
+                ],
+            ],
+        ],
+        'clearCacheSystem' => false,
+        'devIPmask' => '',
+        'displayErrors' => 0,
+        'enableDeprecationLog' => false,
+        'encryptionKey' => '1d968ac3df2c7251942a0c78bf1e0b727b1bbe3f16cb06dfc5c9c4ce44ba622627a69a2c1545f32249b2091d636ec22a',
+        'exceptionalErrors' => 20480,
+        'isInitialDatabaseImportDone' => true,
+        'isInitialInstallationInProgress' => false,
+        'sitename' => 'New TYPO3 site',
+        'sqlDebug' => 0,
+        'systemLogLevel' => 2,
+        't3lib_cs_convMethod' => 'mbstring',
+        't3lib_cs_utils' => 'mbstring',
+    ],
+];
